@@ -13,5 +13,6 @@ body {
     border: 1px solid lightgray;
     width: 100%;
     background-color: #eee;
+    max-height: 80%;
   }
   
