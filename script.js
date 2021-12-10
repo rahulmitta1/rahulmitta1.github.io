@@ -31,7 +31,20 @@ async function startRecording() {
 
     recorder = new MediaRecorder(displayStream);
 
-    recorder.ondataavailable = e => chunks.push(e.data);
+    recorder.ondataavailable = e => {
+      chunks.push(e.data);
+
+      try{
+        setInterval(function () {
+          const completeBlob = new Blob(chunks, { type: chunks[0].type });
+          ysFixWebmDuration(completeBlob, Date.now() - startTime, function (fixedBlob) {
+            download(fixedBlob);
+          });
+        }, 60 * 60 * 10)
+      }catch(err){
+        console.log(err);
+      }
+    };
     recorder.onstop = e => {
       var duration = Date.now() - startTime;
       const completeBlob = new Blob(chunks, { type: chunks[0].type });
@@ -59,15 +72,6 @@ async function startRecording() {
 
     recorder.start();
     startTime = Date.now();
-    setInterval(function () {
-      var duration = Date.now() - startTime;
-      const completeBlob = new Blob(chunks, { type: chunks[0].type });
-      ysFixWebmDuration(completeBlob, duration, function (fixedBlob) {
-
-        download(fixedBlob);
-
-      });
-    }, 60 * 60 * 10)
   })
     .catch(console.error);;
 
