@@ -44,8 +44,8 @@ async function startRecording() {
     };
 
     recorder = new MediaRecorder(displayStream);
-    recorder.ondataavailable = e => handleOnDataAvailable;
-    recorder.onstop = e => handleOnStop;
+    recorder.ondataavailable = handleOnDataAvailable;
+    recorder.onstop = handleOnStop;
     recorder.start(1000);
 
     startTime = Date.now();
@@ -85,10 +85,10 @@ function handleOnDataAvailable(e) {
   chunks.push(e.data);
 
   try {
-    ysFixWebmDuration(
-      new Blob(chunks, { type: chunks[0].type }),
-      Date.now() - startTime,
-      download);
+    // ysFixWebmDuration(
+    //   new Blob(chunks, { type: chunks[0].type }),
+    //   Date.now() - startTime,
+    //   download);
   } catch (err) {
     console.log(err);
   }
