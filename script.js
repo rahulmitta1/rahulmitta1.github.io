@@ -70,19 +70,15 @@ function download(blob) {
   window.URL.revokeObjectURL(url);
 }
 
+var hourInMilliseconds = 60*60*1000;
+var downloadInterval = hourInMilliseconds; // an hour
 function handleOnDataAvailable(e) {
   chunks.push(e.data);
-
-  try {
-    // ysFixWebmDuration(
-    //   new Blob(chunks, { type: chunks[0].type }),
-    //   Date.now() - startTime,
-    //   download);
+  if(Date.now() - startTime > downloadInterval){
     handleOnStop(e);
-  } catch (err) {
-    console.log(err);
+    downloadInterval += hourInMilliseconds;
   }
-
+  
 }
 
 function handleOnStop(e) {
