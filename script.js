@@ -4,19 +4,8 @@ const video = document.querySelector("video");
 let recorder, videoStream, audioStream;
 var startTime;
 let chunks = [];
-var mediaSource, sourceBuffer;
-
-
-
 
 async function startRecording() {
-  mediaSource = new MediaSource();
-  video.src = window.URL.createObjectURL(mediaSource);
-
-  mediaSource.addEventListener('sourceopen', function (e) {
-    console.log('sourceopen')
-    sourceBuffer = mediaSource.addSourceBuffer('video/webm; codecs="vorbis,vp8"');
-  });
 
   var mediaConstraint = {
     // video: { 
@@ -89,16 +78,10 @@ function handleOnDataAvailable(e) {
     //   new Blob(chunks, { type: chunks[0].type }),
     //   Date.now() - startTime,
     //   download);
+    handleOnStop(e);
   } catch (err) {
     console.log(err);
   }
-
-  // appending to sourceBuffer
-  var fileReader = new FileReader();
-  fileReader.onload = function () {
-    sourceBuffer.appendBuffer(fileReader.result);
-  };
-  fileReader.readAsArrayBuffer(e.data)
 
 }
 
