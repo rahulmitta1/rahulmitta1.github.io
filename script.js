@@ -4,8 +4,21 @@ const video = document.querySelector("video");
 let recorder, videoStream, audioStream;
 var startTime;
 let chunks = [];
+var mediaSource, sourceBuffer;
+
+
+
+
 async function startRecording() {
-  videoStream = await navigator.mediaDevices.getDisplayMedia({
+  mediaSource = new MediaSource();
+  video.src = window.URL.createObjectURL(mediaSource);
+
+  mediaSource.addEventListener('sourceopen', function (e) {
+    console.log('sourceopen')
+    sourceBuffer = mediaSource.addSourceBuffer('video/webm; codecs="vorbis,vp8"');
+  });
+
+  var mediaConstraint = {
     // video: { 
     //     mediaSource: "screen",
     //     width: {  ideal: 1280, max: 1920 },
@@ -21,59 +34,23 @@ async function startRecording() {
     video: true,
     // audio: true
 
-  }).then(async displayStream => {
+  }
+
+  videoStream = await navigator.mediaDevices.getDisplayMedia(mediaConstraint).then(async displayStream => {
 
     // somebody clicked on "Stop sharing"
     displayStream.getVideoTracks()[0].onended = function () {
       stop.click();
     };
 
-
     recorder = new MediaRecorder(displayStream);
+    recorder.ondataavailable = e => handleOnDataAvailable;
+    recorder.onstop = e => handleOnStop;
+    recorder.start(1000);
 
-    recorder.ondataavailable = e => {
-      chunks.push(e.data);
-
-      try{
-        setInterval(function () {
-          const completeBlob = new Blob(chunks, { type: chunks[0].type });
-          ysFixWebmDuration(completeBlob, Date.now() - startTime, function (fixedBlob) {
-            download(fixedBlob);
-          });
-        }, 60 * 60 * 10)
-      }catch(err){
-        console.log(err);
-      }
-    };
-    recorder.onstop = e => {
-      var duration = Date.now() - startTime;
-      const completeBlob = new Blob(chunks, { type: chunks[0].type });
-      ysFixWebmDuration(completeBlob, duration, function (fixedBlob) {
-
-        download(fixedBlob);
-
-        video.src = URL.createObjectURL(fixedBlob);
-        video.onloadedmetadata = function () {
-          console.log(video.duration);
-          if (video.duration === Infinity) {
-            video.currentTime = 1e101;
-            video.ontimeupdate = function () {
-              this.ontimeupdate = () => {
-                return;
-              }
-              console.log("After workaround", video.duration, duration);
-              video.currentTime = 0;
-            }
-          }
-        }
-      });
-
-    };
-
-    recorder.start();
     startTime = Date.now();
-  })
-    .catch(console.error);;
+
+  }).catch(console.error);;
 
 }
 
@@ -102,4 +79,49 @@ function download(blob) {
   a.download = 'test.mkv';
   a.click();
   window.URL.revokeObjectURL(url);
+}
+
+function handleOnDataAvailable(e) {
+  chunks.push(e.data);
+
+  try {
+    ysFixWebmDuration(
+      new Blob(chunks, { type: chunks[0].type }),
+      Date.now() - startTime,
+      download);
+  } catch (err) {
+    console.log(err);
+  }
+
+  // appending to sourceBuffer
+  var fileReader = new FileReader();
+  fileReader.onload = function () {
+    sourceBuffer.appendBuffer(fileReader.result);
+  };
+  fileReader.readAsArrayBuffer(e.data)
+
+}
+
+function handleOnStop(e) {
+  var duration = Date.now() - startTime;
+  const completeBlob = new Blob(chunks, { type: chunks[0].type });
+  ysFixWebmDuration(completeBlob, duration, function (fixedBlob) {
+
+    download(fixedBlob);
+
+    video.src = URL.createObjectURL(fixedBlob);
+    video.onloadedmetadata = function () {
+      console.log(video.duration);
+      if (video.duration === Infinity) {
+        video.currentTime = 1e101;
+        video.ontimeupdate = function () {
+          this.ontimeupdate = () => {
+            return;
+          }
+          console.log("After workaround", video.duration, duration);
+          video.currentTime = 0;
+        }
+      }
+    }
+  });
 }
