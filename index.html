@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Screen Recording</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <button id="start">
-      Start Recording
-    </button>
-    <button id="stop" disabled>
-      Stop Recording
-    </button>
-    <video controls autoplay ></video>
+<head>
+  <title>Screen Recording</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      text-align: center;
+    }
 
-    <script src="fix-webm-duration.js"></script>
-    <script src="script.js"></script>
-  </body>
+    button {
+      display: inline-block;
+      margin: 1em 1em;
+      font-size: 2em;
+      cursor: pointer;
+    }
+
+    video {
+      border: 1px solid lightgray;
+      width: 100%;
+      background-color: #eee;
+      max-height: 80%;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="start">
+    Start Recording
+  </button>
+  <button id="stop" disabled>
+    Stop Recording
+  </button>
+  <video controls autoplay></video>
+
+  <script src="fix-webm-duration.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
