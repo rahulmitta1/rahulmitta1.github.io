@@ -19,7 +19,7 @@
         ];
 
         function renderTool(tool){
-            import { myTool} from `'${tool.path}'`;
+            import { myTool} from `${tool.path}`;
             console.log(tool.name);
             console.log(myTool());
         }
@@ -28,7 +28,7 @@
             var ol = document.createElement('ol');
             tools.forEach(tool => {
                 var li = document.createElement('li');
-                li.textContent = tool;
+                li.textContent = tool.name;
                 li.addEventListener('click', () => {
                     renderTool(tool);
                 })
