@@ -10,15 +10,29 @@
     <div id="tools"></div>
     <div id="container"></div>
     <script>
-        const tools = {
-            "screen_recorder": {
+        const tools = [
+            {
+                "name": "screen_recorder",
                 "tags": "",
                 "path": "tools/screenRecorder.js"
             }
+        ];
+
+        function createToolsView(){
+            var ol = document.createElement('ol');
+            for (tool in tools) {
+                var li = document.createElement('li');
+                li.textContent = tool;
+                li.addEventListener('click', () => {
+                    console.log(tool);
+                })
+                ol.appendChild(li);
+            }
+
+            document.querySelector('#tools').appendChild(ol);
         }
-        for (tool in tools){
-            console.log(tool);
-        }
+
+        createToolsView();
     </script>
 </body>
 </html>
