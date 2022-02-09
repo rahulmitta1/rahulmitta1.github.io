@@ -1,0 +1,1 @@
+export function myTool() {console.log("jadoo")};

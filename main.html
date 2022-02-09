@@ -9,25 +9,31 @@
 <body>
     <div id="tools"></div>
     <div id="container"></div>
-    <script>
+    <script type="module">
         const tools = [
             {
                 "name": "screen_recorder",
                 "tags": "",
-                "path": "tools/screenRecorder.js"
+                "path": "./tools/screenRecorder.js"
             }
         ];
 
+        function renderTool(tool){
+            import { myTool} from `'${tool.path}'`;
+            console.log(tool.name);
+            console.log(myTool);
+        }
+
         function createToolsView(){
             var ol = document.createElement('ol');
-            for (tool in tools) {
+            tools.forEach(tool => {
                 var li = document.createElement('li');
                 li.textContent = tool;
                 li.addEventListener('click', () => {
-                    console.log(tool);
+                    renderTool(tool);
                 })
                 ol.appendChild(li);
-            }
+            })
 
             document.querySelector('#tools').appendChild(ol);
         }
