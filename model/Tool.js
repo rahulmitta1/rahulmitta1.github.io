@@ -14,6 +14,7 @@ export class Tool{
     }
 
     load(){
+        this.container.innerHTML = "";
         this.container.appendChild(this.createLayout());
         this.afterLoad();
     }
