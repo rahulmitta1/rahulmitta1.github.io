@@ -33,13 +33,13 @@ class TodoList extends Tool {
         inputBox.appendChild(input);
         this.taskInput = input;
 
-        let button = document.createElement('button');
-        button.id = "add";
-        button.addEventListener('click', () => {
+        let addButton = document.createElement('button');
+        addButton.id = "add";
+        addButton.addEventListener('click', () => {
             this.add(this.taskInput.value);
         });
-        button.textContent = "Add Task";
-        inputBox.appendChild(button);
+        addButton.textContent = "Add Task";
+        inputBox.appendChild(addButton);
 
         wrapper.appendChild(inputBox);
 
@@ -127,7 +127,7 @@ class TodoList extends Tool {
     }
 
     add(newTask){
-        if(newTask != ''){
+        if(newTask){
             this.todos.push(newTask);
             this.saveTodos();
             this.taskInput.value = "";
@@ -145,14 +145,14 @@ class TodoList extends Tool {
             let li = document.createElement('li');
             li.textContent = todo;
 
-            let removeButton = document.querySelector('button');
+            let removeButton = document.createElement('button');
             removeButton.className = 'remove';
             removeButton.addEventListener('click', () => { this.remove(index)});
             removeButton.textContent = "X";
 
             li.appendChild(removeButton);
             ol.appendChild(li);
-        });
+        }); 
         
         this.taskContainer.appendChild(ol);
     }
