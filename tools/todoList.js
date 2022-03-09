@@ -4,7 +4,7 @@ class TodoList extends Tool {
 
     taskInput;
     taskContainer;
-    todos = localStorage.todo || [];
+    todos = JSON.parse(localStorage.todo) || [];
 
     saveTodos(){
         localStorage.todo = JSON.stringify(this.todos);
