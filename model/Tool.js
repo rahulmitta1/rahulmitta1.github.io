@@ -15,5 +15,10 @@ export class Tool{
 
     load(){
         this.container.appendChild(this.createLayout());
+        this.afterLoad();
+    }
+
+    afterLoad(){
+        // implement
     }
 }

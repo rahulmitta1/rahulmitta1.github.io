@@ -1,5 +1,6 @@
 import { Tool } from "../model/Tool.js";
-import { ysFixWebmDuration } from "../libs/fix-webm-duration.js";
+import { downloadBlob } from "../utils/downloader.js";
+import { ysFixWebmDuration } from "../utils/fix-webm-duration.js";
 
 class ScreenRecorder extends Tool {
 
@@ -82,17 +83,6 @@ class ScreenRecorder extends Tool {
 
     }
 
-    download(blob) {
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a');
-        document.body.appendChild(a);
-        a.style.display = 'none';
-        a.href = url;
-        a.download = 'test.mkv';
-        a.click();
-        window.URL.revokeObjectURL(url);
-    }
-
 
     handleOnDataAvailable(e) {
         console.log('handling data');
@@ -113,7 +103,7 @@ class ScreenRecorder extends Tool {
 
     handleFixedBlob(fixedBlob) {
         console.log('Handling fixed blob');
-        this.download(fixedBlob);
+        downloadBlob(fixedBlob, 'test.mkv');
 
         this.video.src = URL.createObjectURL(fixedBlob);
         this.video.onloadedmetadata = () => {
