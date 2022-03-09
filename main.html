@@ -47,8 +47,9 @@
             }
         ];
 
-        async function renderTool(toolObj) {
-            let { CurrentTool } = await import(`${toolObj.path}`);
+        async function renderTool(toolPath) {
+            localStorage.lastTool = toolPath;
+            let { CurrentTool } = await import(`${toolPath}`);
             let tool = new CurrentTool(document.getElementById('container'));
             tool.load();
         }
@@ -59,7 +60,7 @@
                 var li = document.createElement('li');
                 li.textContent = tool.name;
                 li.addEventListener('click', () => {
-                    renderTool(tool);
+                    renderTool(tool.path);
                 })
                 ol.appendChild(li);
             })
@@ -68,6 +69,7 @@
         }
 
         createToolsView();
+        if(localStorage.lastTool) renderTool(localStorage.lastTool);
     </script>
 </body>
 
