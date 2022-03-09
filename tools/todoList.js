@@ -35,7 +35,9 @@ class TodoList extends Tool {
 
         let button = document.createElement('button');
         button.id = "add";
-        button.addEventListener('click', this.add);
+        button.addEventListener('click', () => {
+            this.add(this.taskInput.value);
+        });
         button.textContent = "Add Task";
         inputBox.appendChild(button);
 
@@ -124,10 +126,9 @@ class TodoList extends Tool {
         this.show();
     }
 
-    add(){
-        var task = this.taskInput.value;
-        if(task != ''){
-            this.todos.push(task);
+    add(newTask){
+        if(newTask != ''){
+            this.todos.push(newTask);
             this.saveTodos();
             this.taskInput.value = "";
             this.show();
