@@ -1,0 +1,1407 @@
+{
+    "Full body workout (Mon, Wed, Fri)": [
+        {
+            "exercise": {
+                "title": "High Jumps",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 60,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Rotate Neck",
+                "desc": "1. Pending to add",
+                "image": "rotate_head.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 10
+        },
+        {
+            "exercise": {
+                "title": "Rotate Wrist",
+                "desc": "1. Pending to add",
+                "image": "rotate_wrist.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Rotate Shoulders",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Rotate Arms",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Elbow Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Arm Shoulder Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Shoulder Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 15,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Arm Raise Situps",
+                "desc": "1. Pending to add",
+                "image": "arm_raise_situps.webp"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 15,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Hip Rotate",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Knee Rotate",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Left Leg Rotate",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Left Knee Raise Press",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Left Thigh Stretch Standing",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Right Leg Rotate",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Right Knee Raise Press",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Right Thigh Stretch Standing",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Running",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 240,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Hanging",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 20
+        },
+        {
+            "exercise": {
+                "title": "Chin ups",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Burpees",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 15
+        },
+        {
+            "exercise": {
+                "title": "Gravity Toe Touches",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 20
+        },
+        {
+            "exercise": {
+                "title": "Knee Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Jumping Kicks",
+                "desc": "1. Pending to add",
+                "image": "high_kicks.webp"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": null,
+            "set": {
+                "Push up Pack": [
+                    {
+                        "title": "Close-Grip Push ups",
+                        "desc": "1. Pending to add",
+                        "image": "exercise_pushup.xml"
+                    },
+                    {
+                        "title": "Push-ups",
+                        "desc": "1. Lie down on your stomach<br/> 2. Place your hands near your ears<br/> 3. Use your arms to lift your stomach up until the arms are straight, keeping the back straight<br/> 4. Bend arms until chest almost touches the ground, making sure the back is straight<br/> 5. Repeat from step 3",
+                        "image": "push_ups.webp"
+                    },
+                    {
+                        "title": "Wide-Grip Push ups",
+                        "desc": "1. Pending to add",
+                        "image": "exercise_pushup.xml"
+                    }
+                ]
+            },
+            "isASet": true,
+            "duration": 60,
+            "isFlipped": false,
+            "breakDuration": 20
+        },
+        {
+            "exercise": {
+                "title": "High knees",
+                "desc": "1. Run in place, putting knees as high up as is comfortable and switching legs at a quick pace",
+                "image": "exercise_highknees.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 10
+        },
+        {
+            "exercise": {
+                "title": "Jumping jacks",
+                "desc": "1. Stand with feet together and arms at the sides<br/> 2. Jump to a position with the legs spread wide and the hands touching overhead<br/> 3. Repeat",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Touch the Toes",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Front and Back Bending",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Burpees",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 15
+        },
+        {
+            "exercise": {
+                "title": "Left Leg Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 20
+        },
+        {
+            "exercise": {
+                "title": "Right Leg Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Knees to Chin",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Chair dips",
+                "desc": "1. Sit down on the front edge of a chair, back straight, hands holding the front edge<br/> 2. Still holding the edge of the chair, arms extended, lift your butt and walk forward slightly so that it is a few inches from the chair.<br/> 3. Slowly lower your body, keeping the back straight, until arms are at a right angle<br/> 4. Raise your body again to the previous position, arms extended<br/> 5. Repeat steps 3 and 4",
+                "image": "exercise_tricepsdip.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": null,
+            "set": {
+                "Push up Pack": [
+                    {
+                        "title": "Close-Grip Push ups",
+                        "desc": "1. Pending to add",
+                        "image": "exercise_pushup.xml"
+                    },
+                    {
+                        "title": "Push-ups",
+                        "desc": "1. Lie down on your stomach<br/> 2. Place your hands near your ears<br/> 3. Use your arms to lift your stomach up until the arms are straight, keeping the back straight<br/> 4. Bend arms until chest almost touches the ground, making sure the back is straight<br/> 5. Repeat from step 3",
+                        "image": "push_ups.webp"
+                    },
+                    {
+                        "title": "Wide-Grip Push ups",
+                        "desc": "1. Pending to add",
+                        "image": "exercise_pushup.xml"
+                    }
+                ]
+            },
+            "isASet": true,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 10
+        }
+    ],
+    "Scientific minute workout (Tue, Thu, Sat)": [
+        {
+            "exercise": {
+                "title": "Jumping jacks",
+                "desc": "1. Stand with feet together and arms at the sides<br/> 2. Jump to a position with the legs spread wide and the hands touching overhead<br/> 3. Repeat",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 60,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Rotate Neck",
+                "desc": "1. Pending to add",
+                "image": "rotate_head.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 10
+        },
+        {
+            "exercise": {
+                "title": "Rotate Wrist",
+                "desc": "1. Pending to add",
+                "image": "rotate_wrist.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Rotate Shoulders",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Rotate Arms",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Elbow Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Arm Shoulder Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Shoulder Stretch",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 15,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Arm Raise Situps",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 15,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Hip Rotate",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Knee Rotate",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Left Leg Rotate",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Left Knee Raise Press",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Left Thigh Stretch Standing",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Right Leg Rotate",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Right Knee Raise Press",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Right Thigh Stretch Standing",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Wall sit",
+                "desc": "1. Lean against the wall with feet planted firmly on the ground, shoulders width apart and about 2 feet away from the wall 2. Slide down the wall, keeping the back pressed to it, until legs are at a right angle. The knees should be directly above the ankles<br/> <br/> Quadricep pain is normal, stop if feeling pain in the knee or kneecap ",
+                "image": "exercise_wallsit.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Push-ups",
+                "desc": "1. Lie down on your stomach<br/> 2. Place your hands near your ears<br/> 3. Use your arms to lift your stomach up until the arms are straight, keeping the back straight<br/> 4. Bend arms until chest almost touches the ground, making sure the back is straight<br/> 5. Repeat from step 3",
+                "image": "push_ups.webp"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 60,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Ab crunches",
+                "desc": "1. Lie down face up on the floor with knees bent.<br/> 2. Curl the shoulders towards the pelvis. The hands can be behind or beside the neck or crossed over the chest.<br/> 3. Repeat",
+                "image": "ab_crunches.webp"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Step-ups",
+                "desc": "1. Stand facing a chair<br/> 2. Step up onto the chair<br/> 3. Step off the chair<br/> 4. Repeat",
+                "image": "exercise_stepup.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Inline Push ups",
+                "desc": "Not Added Yet",
+                "image": "incline_push_up.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Bodyweight Squats",
+                "desc": "1. Stand with feet shoulder-width apart<br/> 2. Move the hips back and bend the knees and hips to lower the torso<br/> 3. Repeat",
+                "image": "bodyweight_squat.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 60,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Hip Thrust",
+                "desc": "Not Added Yet",
+                "image": "hip_thrust.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Chair dips",
+                "desc": "1. Sit down on the front edge of a chair, back straight, hands holding the front edge<br/> 2. Still holding the edge of the chair, arms extended, lift your butt and walk forward slightly so that it is a few inches from the chair.<br/> 3. Slowly lower your body, keeping the back straight, until arms are at a right angle<br/> 4. Raise your body again to the previous position, arms extended<br/> 5. Repeat steps 3 and 4",
+                "image": "exercise_tricepsdip.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Plank",
+                "desc": "1. Get down on all fours, with arms straight and knees bent<br/> 2. Walk your feet back until they are extended<br/> 3. Hold this position",
+                "image": "exercise_plank.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "High knees",
+                "desc": "1. Run in place, putting knees as high up as is comfortable and switching legs at a quick pace",
+                "image": "exercise_highknees.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Walking Lunges",
+                "desc": "1. Stand with back straight<br/> 2. Take a large step forward with your left leg<br/> 3. Bring your pelvis down until you almost touch the floor with your right knee<br/> 4. Bring your pelvis back up<br/> 5. Return to standing position by stepping back<br/> 6. Repeat, switching legs each time",
+                "image": "walking_lunges.png"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 60,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Push-up rotations",
+                "desc": "1. Do a standard push-up:<br/> 1.a Lie down on your stomach<br/> 1.b Place your hands near your ears<br/> 1.c Use your arms to lift your stomach up until the arms are straight, keeping the back straight<br/> 1.d Bend arms until chest almost touches the ground, making sure the back is straight<br/> 1.e Lift your stomach up again, returning to step 3<br/> 2. Rotate your body to the side so that the back is straight, the bottom hand supporting the body is fully extended, and only the bottom hand and foot touch the floor<br/> 3. Repeat, changing sides at step 6",
+                "image": "exercise_pushuprotation.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Side plank left",
+                "desc": "1. Lie down on your left side, with your bottom elbow at a right angle, arm sticking out<br/> 2. Lift your pelvis off the floor by lifting your bottom shoulder up, keeping the forearm on the floor; your head, pelvis, and feet should be in a straight line<br/> 3. Hold this position",
+                "image": "exercise_sideplank.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Side plank right",
+                "desc": "1. Lie down on your right side, with your bottom elbow at a right angle, arm sticking out<br/> 2. Lift your pelvis off the floor by lifting your bottom shoulder up, keeping the forearm on the floor; your head, pelvis, and feet should be in a straight line<br/> 3. Hold this position",
+                "image": "exercise_sideplank.xml"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": true,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Inline Push ups",
+                "desc": "Not Added Yet",
+                "image": "incline_push_up.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Bodyweight Squats",
+                "desc": "1. Stand with feet shoulder-width apart<br/> 2. Move the hips back and bend the knees and hips to lower the torso<br/> 3. Repeat",
+                "image": "bodyweight_squat.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Hip Thrust",
+                "desc": "Not Added Yet",
+                "image": "hip_thrust.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Walking Lunges",
+                "desc": "1. Stand with back straight<br/> 2. Take a large step forward with your left leg<br/> 3. Bring your pelvis down until you almost touch the floor with your right knee<br/> 4. Bring your pelvis back up<br/> 5. Return to standing position by stepping back<br/> 6. Repeat, switching legs each time",
+                "image": "walking_lunges.png"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Push-ups",
+                "desc": "1. Lie down on your stomach<br/> 2. Place your hands near your ears<br/> 3. Use your arms to lift your stomach up until the arms are straight, keeping the back straight<br/> 4. Bend arms until chest almost touches the ground, making sure the back is straight<br/> 5. Repeat from step 3",
+                "image": "push_ups.webp"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Ab crunches",
+                "desc": "1. Lie down face up on the floor with knees bent.<br/> 2. Curl the shoulders towards the pelvis. The hands can be behind or beside the neck or crossed over the chest.<br/> 3. Repeat",
+                "image": "ab_crunchs.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        }
+    ],
+    "Weight Lifting": [
+        {
+            "exercise": {
+                "title": "Arm Standing",
+                "desc": "undefined",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Arm Raise Front",
+                "desc": "undefined",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Arm Raise And Stretch Side",
+                "desc": "undefined",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Lift Over Neck",
+                "desc": "undefined",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Rotate Over Neck",
+                "desc": "undefined",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Arm Sitting",
+                "desc": "undefined",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 40,
+            "isFlipped": false,
+            "breakDuration": 5
+        }
+    ],
+    "Yoga Workout": [
+        {
+            "exercise": {
+                "title": "Tada Aasana",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": null,
+            "set": {
+                "Surya Namaskar": [
+                    {
+                        "title": "Pranama Asana",
+                        "desc": " 1. Stand at the edge of your mat, keep your feet together and balance your weight equally on both the feet. 2. Expand your chest and relax your shoulders. 3. As you breathe in, lift both arms up from the sides, and as you exhale, bring your palms together in front of the chest in prayer position.",
+                        "image": "pranama_asana.jpg"
+                    },
+                    {
+                        "title": "Hasta Uttanasana",
+                        "desc": "Hasta Uttanasana",
+                        "image": "hasta_uttana_asana.jpg"
+                    },
+                    {
+                        "title": "Uttana Asana",
+                        "desc": "Not Added Yet",
+                        "image": "uttana_asana.jpg"
+                    },
+                    {
+                        "title": "Anjaney Asana",
+                        "desc": "Not Added Yet",
+                        "image": "anjaney_asana.jpg"
+                    },
+                    {
+                        "title": "Adho Mukha Svana Asana",
+                        "desc": "Not Added Yet",
+                        "image": "adho_mukha_svana_asana.jpg"
+                    },
+                    {
+                        "title": "Ashtanga Namaskara",
+                        "desc": "Not Added Yet",
+                        "image": "ashtanga_namaskara.jpg"
+                    },
+                    {
+                        "title": "Urdhva Mukha Shvanasana",
+                        "desc": "Not Added Yet",
+                        "image": "urdhva_mukha_shvanasana.jpg"
+                    },
+                    {
+                        "title": "Adho Mukha Svana Asana",
+                        "desc": "Not Added Yet",
+                        "image": "adho_mukha_svana_asana.jpg"
+                    },
+                    {
+                        "title": "Anjaney Asana",
+                        "desc": "Not Added Yet",
+                        "image": "anjaney_asana.jpg"
+                    },
+                    {
+                        "title": "Uttana Asana",
+                        "desc": "Not Added Yet",
+                        "image": "uttana_asana.jpg"
+                    },
+                    {
+                        "title": "Hasta Uttanasana",
+                        "desc": "Hasta Uttanasana",
+                        "image": "hasta_uttana_asana.jpg"
+                    },
+                    {
+                        "title": "Pranama Asana",
+                        "desc": " 1. Stand at the edge of your mat, keep your feet together and balance your weight equally on both the feet. 2. Expand your chest and relax your shoulders. 3. As you breathe in, lift both arms up from the sides, and as you exhale, bring your palms together in front of the chest in prayer position.",
+                        "image": "pranama_asana.jpg"
+                    },
+                    {
+                        "title": "Pranama Asana",
+                        "desc": " 1. Stand at the edge of your mat, keep your feet together and balance your weight equally on both the feet. 2. Expand your chest and relax your shoulders. 3. As you breathe in, lift both arms up from the sides, and as you exhale, bring your palms together in front of the chest in prayer position.",
+                        "image": "pranama_asana.jpg"
+                    },
+                    {
+                        "title": "Hasta Uttanasana",
+                        "desc": "Hasta Uttanasana",
+                        "image": "hasta_uttana_asana.jpg"
+                    },
+                    {
+                        "title": "Uttana Asana",
+                        "desc": "Not Added Yet",
+                        "image": "uttana_asana.jpg"
+                    },
+                    {
+                        "title": "Anjaney Asana",
+                        "desc": "Not Added Yet",
+                        "image": "anjaney_asana.jpg"
+                    },
+                    {
+                        "title": "Adho Mukha Svana Asana",
+                        "desc": "Not Added Yet",
+                        "image": "adho_mukha_svana_asana.jpg"
+                    },
+                    {
+                        "title": "Ashtanga Namaskara",
+                        "desc": "Not Added Yet",
+                        "image": "ashtanga_namaskara.jpg"
+                    },
+                    {
+                        "title": "Urdhva Mukha Shvanasana",
+                        "desc": "Not Added Yet",
+                        "image": "urdhva_mukha_shvanasana.jpg"
+                    },
+                    {
+                        "title": "Adho Mukha Svana Asana",
+                        "desc": "Not Added Yet",
+                        "image": "adho_mukha_svana_asana.jpg"
+                    },
+                    {
+                        "title": "Anjaney Asana",
+                        "desc": "Not Added Yet",
+                        "image": "anjaney_asana.jpg"
+                    },
+                    {
+                        "title": "Uttana Asana",
+                        "desc": "Not Added Yet",
+                        "image": "uttana_asana.jpg"
+                    },
+                    {
+                        "title": "Hasta Uttanasana",
+                        "desc": "Hasta Uttanasana",
+                        "image": "hasta_uttana_asana.jpg"
+                    },
+                    {
+                        "title": "Pranama Asana",
+                        "desc": " 1. Stand at the edge of your mat, keep your feet together and balance your weight equally on both the feet. 2. Expand your chest and relax your shoulders. 3. As you breathe in, lift both arms up from the sides, and as you exhale, bring your palms together in front of the chest in prayer position.",
+                        "image": "pranama_asana.jpg"
+                    }
+                ]
+            },
+            "isASet": true,
+            "duration": 240,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Garuda Aasana",
+                "desc": "1. Pending to add",
+                "image": "garuda_asana.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Chakra Aasana",
+                "desc": "1. Pending to add",
+                "image": "chakra_asana.png"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Rotate feets",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Chin to Knees",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Pascimottana Aasana",
+                "desc": "1. Pending to add",
+                "image": "pascimottana_asana.png"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Butterfly Aasana",
+                "desc": "1. Pending to add",
+                "image": "butterfly_asana.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Ardha matsyendra Aasana",
+                "desc": "1. Pending to add",
+                "image": "ardha_matsyendra_asana.webp"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Lower Back Twist",
+                "desc": "1. Pending to add",
+                "image": "lower_back_twist.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Hala Aasana",
+                "desc": "1. Pending to add",
+                "image": "hala_asana.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Naga Aasana",
+                "desc": "1. Pending to add",
+                "image": "naga_asana.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Bala Asana",
+                "desc": "Not Added Yet",
+                "image": "naga_asana.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 10,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Sirsha Aasana",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Kapaal Bhati",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Aanulom Vilom",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 30,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Meditation",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 60,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Eye Exercises",
+                "desc": "1. Pending to add",
+                "image": "rotate_shoulders.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        }
+    ],
+    "Sleep time Stretches": [
+        {
+            "exercise": {
+                "title": "Bear Hug",
+                "desc": "Pending to add",
+                "image": "bear_hug.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Neck Stretch",
+                "desc": "Pending to add",
+                "image": "neck_stretch.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Kneeling Lat Stretch",
+                "desc": "Pending to add",
+                "image": "kneeling_lat_stretch.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Child Pose",
+                "desc": "Pending to add",
+                "image": "child_pose.png"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Legs Up The Wall Pose",
+                "desc": "Pending to add",
+                "image": "legs_up_the_wall_pose.png"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Low Lunge",
+                "desc": "Pending to add",
+                "image": "low_lunge.png"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Reclining Bound Angle Pose",
+                "desc": "Pending to add",
+                "image": "reclining_bound_angle_pose.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        },
+        {
+            "exercise": {
+                "title": "Seated Forward Bend",
+                "desc": "Pending to add",
+                "image": "seated_forward_bend.jpg"
+            },
+            "set": null,
+            "isASet": false,
+            "duration": 20,
+            "isFlipped": false,
+            "breakDuration": 5
+        }
+    ]
+}
