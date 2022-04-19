@@ -4,7 +4,7 @@
             "exercise": {
                 "title": "High Jumps",
                 "desc": "1. Pending to add",
-                "image": "rotate_shoulders.jpg"
+                "image": "high_jumps.webp"
             },
             "set": null,
             "isASet": false,
@@ -160,7 +160,7 @@
             "exercise": {
                 "title": "Left Thigh Stretch Standing",
                 "desc": "1. Pending to add",
-                "image": "rotate_shoulders.jpg"
+                "image": "thigh_strecth.gif"
             },
             "set": null,
             "isASet": false,
@@ -196,7 +196,7 @@
             "exercise": {
                 "title": "Right Thigh Stretch Standing",
                 "desc": "1. Pending to add",
-                "image": "rotate_shoulders.jpg"
+                "image": "thigh_strecth.gif"
             },
             "set": null,
             "isASet": false,
@@ -244,7 +244,7 @@
             "exercise": {
                 "title": "Burpees",
                 "desc": "1. Pending to add",
-                "image": "rotate_shoulders.jpg"
+                "image": "burpees.webp"
             },
             "set": null,
             "isASet": false,
@@ -318,7 +318,7 @@
             "exercise": {
                 "title": "High knees",
                 "desc": "1. Run in place, putting knees as high up as is comfortable and switching legs at a quick pace",
-                "image": "exercise_highknees.xml"
+                "image": "high_knees.gif"
             },
             "set": null,
             "isASet": false,
@@ -330,7 +330,7 @@
             "exercise": {
                 "title": "Jumping jacks",
                 "desc": "1. Stand with feet together and arms at the sides<br/> 2. Jump to a position with the legs spread wide and the hands touching overhead<br/> 3. Repeat",
-                "image": "rotate_shoulders.jpg"
+                "image": "jumping_jacks.gif"
             },
             "set": null,
             "isASet": false,
@@ -414,7 +414,7 @@
             "exercise": {
                 "title": "Chair dips",
                 "desc": "1. Sit down on the front edge of a chair, back straight, hands holding the front edge<br/> 2. Still holding the edge of the chair, arms extended, lift your butt and walk forward slightly so that it is a few inches from the chair.<br/> 3. Slowly lower your body, keeping the back straight, until arms are at a right angle<br/> 4. Raise your body again to the previous position, arms extended<br/> 5. Repeat steps 3 and 4",
-                "image": "exercise_tricepsdip.xml"
+                "image": "chair_dips.webp"
             },
             "set": null,
             "isASet": false,
