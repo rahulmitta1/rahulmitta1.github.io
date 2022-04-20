@@ -55307,7 +55307,7 @@ s=8
 return A.a2(q.y.$0(),$async$l_)
 case 8:case 3:s=q.glj()===B.bO&&A.a(q.a,"workout").b[q.gcU()].gwo()?9:10
 break
-case 9:s=A.a(q.db,"currentExerciseDuration")<=0&&A.a(q.a,"workout").b[q.gcU()].gqS()<A.a(A.a(q.a,"workout").b[q.gcU()].b,"set").b.length?11:12
+case 9:s=A.a(q.db,"currentExerciseDuration")<=0&&A.a(q.a,"workout").b[q.gcU()].gqS()<A.a(A.a(q.a,"workout").b[q.gcU()].b,"set").b.length-1?11:12
 break
 case 11:p=A.a(q.a,"workout").b[q.gcU()]
 p.e=p.gqS()+1
