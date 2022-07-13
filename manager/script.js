@@ -44,7 +44,7 @@ function populateTasks(){
             [${formatTime(task.time)}] ${task.name}
         `;
         if(task.isNow()) taskLI.style.backgroundColor = "orange";
-        tasksOL?.appendChild(taskLI);
+        tasksOL.appendChild(taskLI);
     });
 }
 
