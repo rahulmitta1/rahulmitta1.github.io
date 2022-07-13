@@ -20,7 +20,7 @@ let tasks = [
     new Task("Evening bath",{type: "Health",time: 18.00}),
     new Task("Sleep",{type: "Health",time: 22.50, duration: 6, isNow(){
         let curTime =  currentTime();
-        return (curTime > 22 && curTime < 24) || ( curTime < 4 && curTime > 0);
+        return (curTime > 22 && curTime < 24) || ( curTime < 5 && curTime > 0);
     }}),
 ];
 
