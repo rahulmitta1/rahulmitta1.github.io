@@ -25,27 +25,62 @@ function currentTime(){
 
 function populateTasks(tasks){
     let totalTasks = tasks.length;
-    let tasksOL = document.getElementById("tasks");
+    let tasksList = document.getElementById("pending");
+    let completedList = document.getElementById("completed");
     tasks.forEach((task, index) => {
-        let taskLI = document.createElement("li");
-        taskLI.textContent = `
-            [${formatTime(task.start_time)}] ${task.name}
-        `; 
-        if(task.is_now) taskLI.style.backgroundColor = "orange";
-        tasksOL.appendChild(taskLI);
+        let taskItem = createTaskItem(task, index);
+        if(task.completed) {
+            completedList.appendChild(taskItem);
+        }else{
+            tasksList.appendChild(taskItem);
+        }
     });
 }
 
-function fetchTasks(){
-    let deploy_id = "AKfycbxHwsvNKnPEx5cWpkvCRNW7WZjYZAgkF2bB8Aw8bWTLrE_PYxJ546BvZirPuBJnI0UolA";
-    let url = `https://script.google.com/macros/s/${deploy_id}/exec`;
-    let tasks = [];
-    fetch(url).then(res => res.json()).then(records => {
-        records.forEach(record => {
-            tasks.push(new Task(record.name, record));
-        });
-        populateTasks(tasks);
-       
-    });
+function createTaskItem(task, id){
+    let taskItem = document.createElement("li");
+    taskItem.textContent = `
+        [${formatTime(task.start_time)}] ${task.name}
+    `; 
+    if(!task.completed){
+        let doneButton = document.createElement('button');
+        doneButton.textContent = "Done";
+        doneButton.onclick = async function(){
+            await https.updateRecord(id, {'completed': true});
+            await https.refetchData();
+        }
+    }
+    if(task.is_now) taskItem.style.backgroundColor = "orange";
+    return taskItem;
+}
+
+class Https{
+    deploy_id = "AKfycbxHwsvNKnPEx5cWpkvCRNW7WZjYZAgkF2bB8Aw8bWTLrE_PYxJ546BvZirPuBJnI0UolA";
+    url = `https://script.google.com/macros/s/${deploy_id}/exec?action=read`;
+
+    async fetchRecords(){
+        let tasks = [];
+        let res = await fetch(url);
+        let records = await res.json();
+        return records;
+    }
+
+    async updateRecord(id, data){
+        var update_url = `${url}?id=${id}&action=update`;
+    }
+
+    async refetchData(){
+        location.reload();
+    }
 }  
-fetchTasks();
+
+var https = new Https();
+async function main(){
+    let records = await https.fetchRecords();
+    records = records.map(record => {
+        return new Task(record.name, record);
+    });
+    populateTasks(records);
+}
+
+// main();
