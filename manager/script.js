@@ -53,3 +53,8 @@ function populateTasks(){
 }
 
 populateTasks();
+
+function fetchTasks(){
+    let url = "https://script.googleusercontent.com/macros/echo?user_content_key=H98gcFsuDp9qNkPsUMtOozeXJXnncdxMW2wYpBCkruoldfOAJ0WX58_KWMkHItlxYzFiUTZRgnAjkwLTOqF40Pz_5TZBVhlGm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnDtwMRRUT_7dOk4Uyr7WwR718nQShds_jPACE_XzbYiDhg2DI68lzUafYJPaPy-KIllMSI2ZQGMwQiWlutGXL3ksZE4Edcv13Nz9Jw9Md8uu&lib=MHiAxsktMwc0dnUO8vIbGleIV_rkcH8_K";
+    fetch(url).then(res => res.json).then(res => console.log);
+}
