@@ -10,7 +10,10 @@ class Task{
     }
 
     isNow(){
-        if(!this.duration) return false;
+        if(currentTime() > this.time) {
+            return true;
+        }
+        return false;
         
     }
 }
@@ -37,8 +40,9 @@ function currentTime(){
 }
 
 function populateTasks(){
+    let totalTasks = tasks.length;
     let tasksOL = document.getElementById("tasks");
-    tasks.forEach(task => {
+    tasks.forEach((task, index) => {
         let taskLI = document.createElement("li");
         taskLI.textContent = `
             [${formatTime(task.time)}] ${task.name}
