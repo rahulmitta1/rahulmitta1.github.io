@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Cinema - Business Growth & Consultation</title>
@@ -86,33 +87,29 @@
         }
 
         .nav-links a {
+            cursor: pointer;
             color: var(--text-dark);
             font-weight: 500;
             text-decoration: none;
-            transition: color 0.3s;
-            cursor: pointer;
-            padding: 0.5rem 0;
-            position: relative;
+            padding: 0.5rem 1rem;
+            /* Added padding for a button feel */
+            border-radius: 6px;
+            /* Added rounded corners */
+            transition: background-color 0.3s, color 0.3s;
+            /* Smooth transition */
         }
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-color);
-            transition: width 0.3s;
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
+        .nav-links a:hover {
+            background-color: #f0f4f8;
+            /* A light, neutral hover state */
+            color: var(--primary-color);
         }
 
         .nav-links a.active {
-            color: var(--primary-color);
+            background-color: var(--primary-color);
+            /* Strong active state */
+            color: white;
+            /* White text on active */
         }
 
         /* Page Sections */
@@ -302,7 +299,7 @@
         }
 
         .casestudy-thumbnail h3,
-        .casestudy-thumbnail p {
+        .casestudy-thumbnail span {
             position: relative;
             z-index: 2;
             margin: 0;
@@ -313,7 +310,7 @@
             margin-bottom: 0.25rem;
         }
 
-        .casestudy-thumbnail p {
+        .casestudy-thumbnail span {
             background: var(--accent-color);
             color: var(--text-dark);
             padding: 0.2rem 0.6rem;
@@ -321,6 +318,7 @@
             font-size: 0.8rem;
             font-weight: bold;
             display: inline-block;
+            align-self: flex-start;
         }
 
         .casestudy-content {
@@ -509,8 +507,7 @@
     <nav>
         <div class="nav-container">
             <a href="#" onclick="showPage('home')" class="logo">
-                <div class="logo-icon">🚀</div>
-                Startup <span class="logo-accent">cinema</span>
+                <img src="logo.png" width="200">
             </a>
             <ul class="nav-links">
                 <li><a onclick="showPage('home')" class="nav-link active">Home</a></li>
@@ -542,6 +539,11 @@
                         <p>Strategic guidance tailored to your unique business challenges and growth objectives.</p>
                     </div>
                     <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Design Fusion</h3>
+                        <p>Creative website and brand design that captivates audiences and drives conversions.</p>
+                    </div>
+                    <div class="service-card">
                         <div class="service-icon">🎥</div>
                         <h3>Video Production</h3>
                         <p>Professional video content that tells your brand story and engages your target audience.</p>
@@ -563,7 +565,7 @@
                         <div class="casestudy-thumbnail">
                             <div class="thumbnail-overlay"></div>
                             <h3>Tech Innovators</h3>
-                            <p>Business Acquisition</p>
+                            <span>Business Acquisition</span>
                         </div>
                         <div class="casestudy-content">
                             <h4>Achieved 400% Revenue Growth Through Strategic Acquisition and Integration</h4>
@@ -573,7 +575,7 @@
                         <div class="casestudy-thumbnail">
                             <div class="thumbnail-overlay"></div>
                             <h3>GreenEco Ltd.</h3>
-                            <p>PR Services</p>
+                            <span>PR Services</span>
                         </div>
                         <div class="casestudy-content">
                             <h4>Transformed into a Market Leader with a 3X Increase in Media Placements</h4>
@@ -583,7 +585,7 @@
                         <div class="casestudy-thumbnail">
                             <div class="thumbnail-overlay"></div>
                             <h3>Creative Goods Co.</h3>
-                            <p>Video Production</p>
+                            <span>Video Production</span>
                         </div>
                         <div class="casestudy-content">
                             <h4>Boosted E-commerce Sales by 500% with a Viral Video Marketing Campaign</h4>
