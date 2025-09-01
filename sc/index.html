@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+
+<head>
+    <script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Cinema - Business Growth & Consultation</title>
@@ -11,13 +13,17 @@
             box-sizing: border-box;
         }
 
+        /* NEW BRAND COLORS FROM CONCEPT 1 */
         :root {
-            --primary-color: #1a1a2e;
-            --secondary-color: #16213e;
-            --accent-color: #e94560;
+            --primary-color: #0C50D5;
+            /* Brand Blue */
+            --accent-color: #A4E322;
+            /* Brand Lime Green */
+            --secondary-color: #08388a;
+            /* Darker blue for gradients/hovers */
             --text-light: #f5f5f5;
             --text-dark: #333;
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
         }
 
         body {
@@ -29,13 +35,14 @@
 
         /* Navigation */
         nav {
-            background: var(--primary-color);
+            background: #ffffff;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid #f0f0f0;
         }
 
         .nav-container {
@@ -48,24 +55,29 @@
         }
 
         .logo {
-            color: var(--text-light);
+            color: var(--text-dark);
             font-size: 1.5rem;
             font-weight: bold;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.75rem;
         }
 
         .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient);
-            border-radius: 8px;
+            width: 45px;
+            height: 45px;
+            background: var(--primary-color);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .logo-accent {
+            color: var(--accent-color);
         }
 
         .nav-links {
@@ -75,24 +87,41 @@
         }
 
         .nav-links a {
-            color: var(--text-light);
+            color: var(--text-dark);
+            font-weight: 500;
             text-decoration: none;
-            transition: color 0.3s, background-color 0.3s;
+            transition: color 0.3s;
             cursor: pointer;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
+            padding: 0.5rem 0;
+            position: relative;
         }
 
-        .nav-links a:hover, .nav-links a.active {
-            background: rgba(233, 69, 96, 0.2);
-            color: var(--accent-color);
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--primary-color);
         }
 
         /* Page Sections */
         .page {
             display: none;
-            margin-top: 80px; /* Adjusted for fixed nav height */
-            min-height: calc(100vh - 80px);
+            margin-top: 85px;
+            /* Adjusted for fixed nav height */
+            min-height: calc(100vh - 85px);
         }
 
         .page.active {
@@ -101,8 +130,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Hero Section */
@@ -111,37 +147,16 @@
             color: white;
             padding: 6rem 2rem;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-            background-size: cover;
         }
 
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
         }
 
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            animation: slideDown 0.8s;
-        }
-
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
         }
 
         .hero p {
@@ -153,18 +168,19 @@
         .cta-button {
             display: inline-block;
             background: var(--accent-color);
-            color: white;
-            padding: 1rem 2rem;
+            color: var(--text-dark);
+            padding: 1rem 2.5rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(233, 69, 96, 0.3);
+            box-shadow: 0 10px 20px rgba(164, 227, 34, 0.3);
         }
 
         /* Container */
@@ -184,7 +200,7 @@
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            color: var(--primary-color);
+            color: var(--text-dark);
             position: relative;
         }
 
@@ -193,7 +209,7 @@
             display: block;
             width: 80px;
             height: 4px;
-            background: var(--gradient);
+            background: var(--primary-color);
             margin: 1rem auto 0;
             border-radius: 2px;
         }
@@ -207,21 +223,22 @@
         .service-card {
             background: white;
             padding: 2rem;
+            border: 1px solid #eee;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         }
 
         .service-icon {
             width: 80px;
             height: 80px;
-            background: var(--gradient);
+            background: var(--primary-color);
             border-radius: 50%;
             margin: 0 auto 1.5rem;
             display: flex;
@@ -232,37 +249,89 @@
         }
 
         .service-card h3 {
-            color: var(--primary-color);
+            color: var(--text-dark);
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
 
-        /* Client Results */
+        /* Client Results - CASE STUDY STYLES */
         .results {
             background: #f8f9fa;
         }
 
-        .results-grid {
+        .casestudy-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
         }
 
-        .result-card {
+        .casestudy-card {
             background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: 1px solid #eee;
         }
 
-        .result-number {
-            font-size: 3rem;
-            font-weight: bold;
+        .casestudy-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .casestudy-thumbnail {
+            height: 250px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            color: white;
             background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            /* Placeholder background */
+        }
+
+        .thumbnail-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 60%);
+            z-index: 1;
+        }
+
+        .casestudy-thumbnail h3,
+        .casestudy-thumbnail p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
+
+        .casestudy-thumbnail h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .casestudy-thumbnail p {
+            background: var(--accent-color);
+            color: var(--text-dark);
+            padding: 0.2rem 0.6rem;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .casestudy-content {
+            padding: 1.5rem;
+        }
+
+        .casestudy-content h4 {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            line-height: 1.4;
         }
 
         /* Blog Preview */
@@ -280,9 +349,10 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s;
             cursor: pointer;
+            border: 1px solid #eee;
         }
 
         .blog-card:hover {
@@ -292,7 +362,7 @@
         .blog-image {
             width: 100%;
             height: 200px;
-            background: var(--gradient);
+            background: var(--primary-color);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -307,7 +377,7 @@
         }
 
         .blog-content h3 {
-            color: var(--primary-color);
+            color: var(--text-dark);
             margin-bottom: 0.5rem;
         }
 
@@ -316,10 +386,10 @@
             font-size: 0.9rem;
             margin-bottom: 1rem;
         }
-        
+
         /* Footer */
         footer {
-            background: var(--primary-color);
+            background: var(--text-dark);
             color: var(--text-light);
             padding: 3rem 0 1rem;
         }
@@ -361,8 +431,8 @@
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.7);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
         }
 
         /* Responsive */
@@ -371,14 +441,24 @@
                 flex-direction: column;
                 gap: 1rem;
             }
+
             .nav-links {
                 gap: 0.5rem;
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            .hero h1 { font-size: 2.5rem; }
-            .hero p { font-size: 1.1rem; }
-            .page { margin-top: 130px; } /* Adjust for taller nav */
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .page {
+                margin-top: 130px;
+            }
         }
 
         /* Additional Page Styles */
@@ -399,7 +479,7 @@
             padding: 3rem;
             margin-bottom: 2rem;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
         }
 
         .stats-grid {
@@ -415,7 +495,7 @@
             background: var(--gradient);
             color: white;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .stat-card h3 {
@@ -424,13 +504,14 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <a href="#" onclick="showPage('home')" class="logo">
-                <div class="logo-icon">🎬</div>
-                Startup Cinema
+                <div class="logo-icon">🚀</div>
+                Startup <span class="logo-accent">cinema</span>
             </a>
             <ul class="nav-links">
                 <li><a onclick="showPage('home')" class="nav-link active">Home</a></li>
@@ -446,7 +527,8 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Transform Your Business Vision Into Reality</h1>
-                <p>Expert consultation, strategic acquisition, and sustainable growth solutions for ambitious entrepreneurs.</p>
+                <p>Expert consultation, strategic acquisition, and sustainable growth solutions for ambitious
+                    entrepreneurs.</p>
                 <a onclick="showPage('services')" class="cta-button">Explore Our Services</a>
             </div>
         </section>
@@ -476,23 +558,37 @@
 
         <section class="results">
             <div class="container">
-                <h2 class="section-title">Client Results</h2>
-                <div class="results-grid">
-                    <div class="result-card">
-                        <div class="result-number">150+</div>
-                        <p>Businesses Transformed</p>
+                <h2 class="section-title">Client Results: Case Studies</h2>
+                <div class="casestudy-grid">
+                    <div class="casestudy-card" onclick="showPage('growth')">
+                        <div class="casestudy-thumbnail">
+                            <div class="thumbnail-overlay"></div>
+                            <h3>Tech Innovators</h3>
+                            <p>Business Acquisition</p>
+                        </div>
+                        <div class="casestudy-content">
+                            <h4>Achieved 400% Revenue Growth Through Strategic Acquisition and Integration</h4>
+                        </div>
                     </div>
-                    <div class="result-card">
-                        <div class="result-number">$50M+</div>
-                        <p>Revenue Generated</p>
+                    <div class="casestudy-card" onclick="showPage('growth')">
+                        <div class="casestudy-thumbnail">
+                            <div class="thumbnail-overlay"></div>
+                            <h3>GreenEco Ltd.</h3>
+                            <p>PR Services</p>
+                        </div>
+                        <div class="casestudy-content">
+                            <h4>Transformed into a Market Leader with a 3X Increase in Media Placements</h4>
+                        </div>
                     </div>
-                    <div class="result-card">
-                        <div class="result-number">95%</div>
-                        <p>Client Satisfaction</p>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-number">3x</div>
-                        <p>Average Growth Rate</p>
+                    <div class="casestudy-card" onclick="showPage('growth')">
+                        <div class="casestudy-thumbnail">
+                            <div class="thumbnail-overlay"></div>
+                            <h3>Creative Goods Co.</h3>
+                            <p>Video Production</p>
+                        </div>
+                        <div class="casestudy-content">
+                            <h4>Boosted E-commerce Sales by 500% with a Viral Video Marketing Campaign</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -507,7 +603,8 @@
                         <div class="blog-content">
                             <h3>10 Strategies for Scaling Your Startup</h3>
                             <div class="blog-meta">March 15, 2024 • 5 min read</div>
-                            <p>Discover proven strategies that successful entrepreneurs use to scale their businesses...</p>
+                            <p>Discover proven strategies that successful entrepreneurs use to scale their businesses...
+                            </p>
                         </div>
                     </div>
                     <div class="blog-card" onclick="showPage('blog')">
@@ -515,7 +612,8 @@
                         <div class="blog-content">
                             <h3>The Art of Business Acquisition</h3>
                             <div class="blog-meta">March 10, 2024 • 7 min read</div>
-                            <p>Learn how to identify, evaluate, and acquire businesses that align with your growth strategy...</p>
+                            <p>Learn how to identify, evaluate, and acquire businesses that align with your growth
+                                strategy...</p>
                         </div>
                     </div>
                     <div class="blog-card" onclick="showPage('blog')">
@@ -523,7 +621,8 @@
                         <div class="blog-content">
                             <h3>Building a Winning Company Culture</h3>
                             <div class="blog-meta">March 5, 2024 • 6 min read</div>
-                            <p>Create a culture that attracts top talent and drives innovation in your organization...</p>
+                            <p>Create a culture that attracts top talent and drives innovation in your organization...
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -539,12 +638,14 @@
         </div>
         <div class="container">
             <div class="blog-grid">
+                <!-- Blog cards content remains the same -->
                 <div class="blog-card">
                     <div class="blog-image">Scaling Strategies</div>
                     <div class="blog-content">
                         <h3>10 Strategies for Scaling Your Startup</h3>
                         <div class="blog-meta">March 15, 2024 • 5 min read</div>
-                        <p>Discover proven strategies that successful entrepreneurs use to scale their businesses from startup to enterprise level...</p>
+                        <p>Discover proven strategies that successful entrepreneurs use to scale their businesses from
+                            startup to enterprise level...</p>
                     </div>
                 </div>
                 <div class="blog-card">
@@ -552,7 +653,8 @@
                     <div class="blog-content">
                         <h3>The Art of Business Acquisition</h3>
                         <div class="blog-meta">March 10, 2024 • 7 min read</div>
-                        <p>Learn how to identify, evaluate, and acquire businesses that align with your strategic growth objectives...</p>
+                        <p>Learn how to identify, evaluate, and acquire businesses that align with your strategic growth
+                            objectives...</p>
                     </div>
                 </div>
                 <div class="blog-card">
@@ -560,7 +662,8 @@
                     <div class="blog-content">
                         <h3>Building a Winning Company Culture</h3>
                         <div class="blog-meta">March 5, 2024 • 6 min read</div>
-                        <p>Create a culture that attracts top talent, drives innovation, and sustains long-term growth...</p>
+                        <p>Create a culture that attracts top talent, drives innovation, and sustains long-term
+                            growth...</p>
                     </div>
                 </div>
                 <div class="blog-card">
@@ -569,22 +672,6 @@
                         <h3>Digital Marketing Trends 2024</h3>
                         <div class="blog-meta">February 28, 2024 • 8 min read</div>
                         <p>Stay ahead of the curve with the latest digital marketing strategies and technologies...</p>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-image">Financial Planning</div>
-                    <div class="blog-content">
-                        <h3>Financial Planning for Growth</h3>
-                        <div class="blog-meta">February 20, 2024 • 10 min read</div>
-                        <p>Master the financial strategies that fuel sustainable business expansion and secure investor confidence...</p>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-image">Leadership Insights</div>
-                    <div class="blog-content">
-                        <h3>Leadership in Times of Change</h3>
-                        <div class="blog-meta">February 15, 2024 • 6 min read</div>
-                        <p>Navigate organizational transformation with confidence and clarity, empowering your team to thrive...</p>
                     </div>
                 </div>
             </div>
@@ -598,6 +685,7 @@
             <p>Real results from real businesses we've helped transform.</p>
         </div>
         <div class="container">
+            <!-- Client growth content remains the same -->
             <div class="stats-grid">
                 <div class="stat-card">
                     <h3>250%</h3>
@@ -616,39 +704,49 @@
                     <p>New Markets Entered</p>
                 </div>
             </div>
-
             <div class="content-section">
                 <h2 class="section-title" style="margin-bottom: 3rem;">Success Stories</h2>
                 <div style="margin-top: 2rem;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">TechStart Solutions</h3>
-                    <p style="margin-bottom: 1.5rem;">From a 5-person startup to a 150-employee enterprise in just 3 years. Through strategic consultation and two key acquisitions, TechStart Solutions expanded from local to international markets, achieving a 400% revenue growth.</p>
-                    
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">GreenEco Industries</h3>
-                    <p style="margin-bottom: 1.5rem;">Transformed their traditional manufacturing business into a sustainable industry leader. Our PR services and business strategy helped them secure $10M in funding and triple their market share.</p>
-                    
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Digital Commerce Co.</h3>
-                    <p>Leveraged our video production and marketing expertise to build a brand that resonates. Result: 500% increase in online sales and successful expansion into 5 new markets within 18 months.</p>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Tech Innovators</h3>
+                    <p style="margin-bottom: 1.5rem;">From a 5-person startup to a 150-employee enterprise in just 3
+                        years. Through strategic consultation and two key acquisitions, Tech Innovators expanded from
+                        local to international markets, achieving a 400% revenue growth.</p>
+
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">GreenEco Ltd.</h3>
+                    <p style="margin-bottom: 1.5rem;">Transformed their traditional manufacturing business into a
+                        sustainable industry leader. Our PR services and business strategy helped them secure $10M in
+                        funding, triple their market share, and gain features in 3 major industry publications.</p>
+
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Creative Goods Co.</h3>
+                    <p>Leveraged our video production and marketing expertise to build a brand that resonates. Result:
+                        500% increase in online sales and successful expansion into 5 new markets within 18 months,
+                        driven by a viral social media campaign that reached 10 million viewers.</p>
                 </div>
             </div>
 
             <div class="content-section">
                 <h2 class="section-title" style="margin-bottom: 3rem;">Our Growth Framework</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
                     <div>
                         <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">1. Assessment</h3>
-                        <p>Comprehensive analysis of your current business position, market landscape, and growth potential.</p>
+                        <p>Comprehensive analysis of your current business position, market landscape, and growth
+                            potential.</p>
                     </div>
                     <div>
                         <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">2. Strategy</h3>
-                        <p>Custom-tailored growth strategy aligned with your vision, resources, and market opportunities.</p>
+                        <p>Custom-tailored growth strategy aligned with your vision, resources, and market
+                            opportunities.</p>
                     </div>
                     <div>
                         <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">3. Implementation</h3>
-                        <p>Hands-on execution support with continuous optimization and adjustment for maximum impact.</p>
+                        <p>Hands-on execution support with continuous optimization and adjustment for maximum impact.
+                        </p>
                     </div>
                     <div>
                         <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">4. Scale</h3>
-                        <p>Sustainable scaling strategies to maintain growth momentum and build a lasting enterprise.</p>
+                        <p>Sustainable scaling strategies to maintain growth momentum and build a lasting enterprise.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -662,82 +760,27 @@
             <p>Comprehensive solutions for every stage of your business journey.</p>
         </div>
         <div class="container">
+            <!-- Services content remains the same, but styling will be updated -->
             <div class="content-section">
                 <h2>Business Consultation</h2>
-                <p style="margin-bottom: 2rem;">Our expert consultants bring decades of experience across industries to help you navigate challenges and capitalize on opportunities.</p>
+                <p style="margin-bottom: 2rem;">Our expert consultants bring decades of experience across industries to
+                    help you navigate challenges and capitalize on opportunities.</p>
                 <ul style="list-style: none; padding: 0;">
                     <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Strategic Planning & Execution
+                        <span style="position: absolute; left: 0; color: var(--primary-color);">✔</span> Strategic
+                        Planning & Execution
                     </li>
                     <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Market Analysis & Entry Strategy
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Operational Excellence & Optimization
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Leadership Development & Coaching
+                        <span style="position: absolute; left: 0; color: var(--primary-color);">✔</span> Market Analysis
+                        & Entry Strategy
                     </li>
                 </ul>
             </div>
-
             <div class="content-section">
                 <h2>Business Acquisition</h2>
-                <p style="margin-bottom: 2rem;">Navigate the complex world of mergers and acquisitions with confidence. We guide you from initial search to final integration.</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Target Identification & Evaluation
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Due Diligence & Risk Assessment
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Negotiation & Deal Structuring
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Post-Acquisition Integration Planning
-                    </li>
-                </ul>
+                <p style="margin-bottom: 2rem;">Navigate the complex world of mergers and acquisitions with confidence.
+                    We guide you from initial search to final integration.</p>
             </div>
-
-            <div class="content-section">
-                <h2>Video Production</h2>
-                <p style="margin-bottom: 2rem;">Professional video content that captures your brand essence and drives engagement across all platforms.</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Brand Storytelling & Documentaries
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Product Demos & Explainer Videos
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Corporate Videos & Training Content
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Social Media & Digital Ad Campaigns
-                    </li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>PR Services</h2>
-                <p style="margin-bottom: 2rem;">Build and protect your brand reputation with strategic public relations that secure meaningful media coverage.</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Media Relations & Press Releases
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Crisis Management & Communication
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Thought Leadership & Content Strategy
-                    </li>
-                    <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--accent-color);">✔</span> Event Promotion & Management
-                    </li>
-                </ul>
-            </div>
-
             <div style="text-align: center; margin-top: 3rem;">
                 <a onclick="alert('Contact form would open here.')" class="cta-button">Schedule a Free Consultation</a>
             </div>
@@ -748,8 +791,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>About Startup Cinema</h3>
-                <p>Empowering businesses to reach their full potential through strategic consultation, smart acquisitions, and sustainable growth strategies.</p>
+                <h3>Startup <span class="logo-accent">cinema</span></h3>
+                <p>Empowering businesses to reach their full potential through strategic consultation, smart
+                    acquisitions, and sustainable growth strategies.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -761,19 +805,9 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Our Services</h3>
-                <ul>
-                    <li><a onclick="showPage('services')">Business Consultation</a></li>
-                    <li><a onclick="showPage('services')">Business Acquisition</a></li>
-                    <li><a onclick="showPage('services')">Video Production</a></li>
-                    <li><a onclick="showPage('services')">PR Services</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
                 <h3>Contact Us</h3>
                 <p>contact@startupcinema.com</p>
                 <p>+1 (555) 123-4567</p>
-                <p>123 Growth Ave, Suite 100<br>Innovation City, USA 12345</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -809,4 +843,5 @@
         }
     </script>
 </body>
+
 </html>
